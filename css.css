@@ -1,0 +1,114 @@
+body
+{font-family: 'Inter', sans-serif;
+}
+
+h1
+{color:white;
+text-align: center;
+}
+.navbar {
+    width: 100%;
+    background-color: #252d28;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #05543e;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  
+
+
+  img{
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  .container {
+    height: 500%;
+    width: 900px;
+    background-image: url('your_image.jpg'); /* Replace 'your_image.jpg' with the actual path to your image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-wrapper {
+    background-color: rgba(255, 255, 255, 1); /* Set the background color with transparency */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 20px;
+    width: 100%;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #29372a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.trackform{
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%)
+    /* transform: translateX(-50%); */
+}
+.imagediv{
+position: relative;
+
+}
+.formgroupdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.firsthorizontal{
+    margin-top: 150px;
+
+}
